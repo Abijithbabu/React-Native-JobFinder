@@ -7,9 +7,9 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   userName: {
-    fontFamily: FONT.regular,
+    fontFamily: FONT.bold,
     fontSize: SIZES.large,
-    color: COLORS.secondary,
+    color: COLORS.tertiary,
   },
   welcomeMessage: {
     fontFamily: FONT.bold,

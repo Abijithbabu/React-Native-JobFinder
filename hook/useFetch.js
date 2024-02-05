@@ -30,7 +30,7 @@ const useFetch = (endpoint, query = {
             const res = await new Promise((resolve) => {
                 setTimeout(function () {
                   resolve({ data:jobData });
-                }, 1000);
+                }, 200);
             })
             setData(res?.data?.data)
             setIsLoading(false)

@@ -4,13 +4,13 @@
     "slug": "React-Native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/kemal.png",
+    "icon": "./assets/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/kemal.png",
+      "image": "./assets/images/logo.jpg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#00031A"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,14 +20,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/kemal.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/kemal.png"
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
