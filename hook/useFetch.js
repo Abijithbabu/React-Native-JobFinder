@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 // import { RAPID_API_KEY } from '@env'
 import axios from 'axios'
+import { jobData } from './constants'
 const API_KEY = '87891753d6msh2b593f0c92e6224p1aa79ejsn6cd0d851de08'
 
-const useFetch = (endpoint, query={
+const useFetch = (endpoint, query = {
     query: 'Python developer in Texas, USA',
     page: '1',
     num_pages: '1'
-  }) => {
+}) => {
     const [data, setData] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState(null)
@@ -25,7 +26,12 @@ const useFetch = (endpoint, query={
     const fetchData = async () => {
         setIsLoading(true)
         try {
-            const res = await axios.request(options)
+            // const res = await axios.request(options)
+            const res = await new Promise((resolve) => {
+                setTimeout(function () {
+                  resolve({ data:jobData });
+                }, 1000);
+            })
             setData(res?.data?.data)
             setIsLoading(false)
         } catch (error) {

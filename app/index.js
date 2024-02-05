@@ -1,8 +1,8 @@
 import React from 'react'
-import { SafeAreaView, ScrollView, Text, View } from 'react-native'
+import { SafeAreaView, ScrollView, View } from 'react-native'
 import { COLORS, SIZES, images, icons } from '../constants'
 import { Stack } from 'expo-router'
-import { Nearbyjobs, NearbyJobCard, Popularjobs, Welcome, ScreenHeaderBtn } from '../components'
+import { Nearbyjobs, Popularjobs, Welcome, ScreenHeaderBtn } from '../components'
 
 const Home = () => {
   return (
@@ -20,9 +20,9 @@ const Home = () => {
       }} />
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
-<Welcome/>
-{/* <Popularjobs/> */}
-{/* <Nearbyjobs/> */}
+          <Welcome />
+          <Popularjobs />
+          <Nearbyjobs />
         </View>
       </ScrollView>
     </SafeAreaView>
